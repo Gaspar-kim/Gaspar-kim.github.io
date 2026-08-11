@@ -1,0 +1,8 @@
+{
+  "name": "donyung-kim-academic-homepage",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python -m http.server 8000"
+  }
+}

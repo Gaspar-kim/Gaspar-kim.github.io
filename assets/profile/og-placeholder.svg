@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Donyung Kim</title>
+  <desc id="desc">Computer Vision, 3D Vision, Spatial Intelligence, and Robotics.</desc>
+  <rect width="1200" height="630" fill="#fbfbfa"/>
+  <path d="M88 94h1024M88 536h1024" stroke="#dce1e5"/>
+  <text x="88" y="270" fill="#17191d" font-family="Arial, sans-serif" font-size="78" font-weight="700">Donyung Kim</text>
+  <text x="88" y="340" fill="#28679a" font-family="Arial, sans-serif" font-size="30">Computer Vision · 3D Vision · Spatial Intelligence · Robotics</text>
+  <text x="88" y="454" fill="#636a73" font-family="Arial, sans-serif" font-size="24">Academic research homepage</text>
+</svg>
