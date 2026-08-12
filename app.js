@@ -34,6 +34,7 @@ function renderProfile() {
   const { profile } = siteData;
   document.querySelector("#hero-position").textContent = profile.position;
   document.querySelector("#hero-fields").textContent = profile.fields.join(" · ");
+  document.querySelector("#hero-bio").textContent = profile.bio;
   document.querySelector("#social-links").innerHTML = profile.socialLinks
     .map((link) => renderLink(link))
     .join('<span class="link-separator" aria-hidden="true">/</span>');
@@ -45,7 +46,6 @@ function renderProfile() {
 function renderResearch() {
   const research = siteData.researchIntroduction;
   document.querySelector("#research-lead").innerHTML = formatBold(research.lead);
-  document.querySelector("#research-detail").innerHTML = formatBold(research.detail);
   document.querySelector("#research-goal").innerHTML = formatBold(research.goal);
 
   document.querySelector("#research-stages").innerHTML = research.stages

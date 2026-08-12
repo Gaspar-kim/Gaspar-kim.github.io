@@ -1,8 +1,9 @@
 export const siteData = {
   profile: {
     name: "Donyung Kim",
-    position: "Robotics Researcher at NaviFra · Since Sep. 2025",
-    fields: ["Computer Vision", "3D Vision", "Spatial Intelligence", "Robotics"],
+    position: "Robotics Researcher at NaviFra · Main Project: NaviDock",
+    fields: ["3D Vision", "Spatial Intelligence", "Robotic Perception"],
+    bio: "I am a robotics researcher at NaviFra, working on 3D perception and 6-DoF object tracking for robotic systems. I received my M.S. in Electronic Engineering from Yeungnam University, where I worked on multimodal computer vision, thermal imaging, 3D reconstruction, and visual tracking in the Advanced Visual Intelligence Laboratory (AVIL), advised by Prof. Sungho Kim. My current research interests lie in spatial intelligence for precise and interactive 3D object understanding.",
     email: "dnkim9970@gmail.com",
     location: "Suwon, South Korea",
     portrait: "assets/profile/donyung-kim-portrait.jpg",
@@ -42,7 +43,6 @@ export const siteData = {
         description: "Extends explicit understanding to deformable objects and how their shape changes under action."
       }
     ],
-    detail: "I think of this direction in three stages. First, **3D Perception and Tracking** builds an initial explicit 3D representation of an object and keeps it aligned with the object as it moves. Second, **Active Verification and Refinement** compares the current model with real observations, identifies where the model may be inaccurate, and chooses additional viewpoints or interactions that can resolve the uncertainty and refine the geometry. Finally, **Interactive Physical Understanding** extends this idea beyond rigid objects to deformable objects, where an agent must understand not only an object's shape but also how it changes under action.",
     goal: "My long-term goal is to build an agent whose internal explicit 3D model becomes progressively consistent with the physical object through a continuous loop of **observation, verification, interaction, and self-correction**. I ultimately hope that such precise object understanding can support reliable robotic manipulation, inspection, and interaction with complex real-world objects.",
     loop: ["Observation", "Verification", "Interaction", "Self-correction"]
   },
@@ -50,6 +50,7 @@ export const siteData = {
   news: [
     { date: "2026", text: "NaviDock received Gold in Engineering & Robotics at the 2026 Edison Awards." },
     { date: "2026", text: "NaviDock was named a CES 2026 Innovation Awards Honoree in Robotics." },
+    { date: "Sep. 2025", text: "Joined NaviFra as a Robotics Researcher, working primarily on NaviDock." },
     { date: "Jul. 2025", text: "Our black-ice detection patent was registered in Korea (No. 10-2831565)." },
     { date: "Dec. 2024", text: "RecNet was published in IEEE Access." },
     { date: "Nov. 2024", text: "PLZ-TM was published in IEEE Access." }
@@ -74,8 +75,8 @@ export const siteData = {
       authors: ["Seungeon Lee", "Donyung Kim", "Inho Park", "Geonjong Kim", "Sungho Kim"],
       venue: "IEEE Access, vol. 12, pp. 164777–164791",
       year: "2024",
-      image: "assets/publications/plztm-paper.jpg",
-      imageAlt: "First page of the PLZ-TM paper",
+      image: "assets/publications/plztm-figure.webp",
+      imageAlt: "PLZ-TM network and lightweight ZNCC architecture",
       summary: "A pooling-free CNN and lightweight ZNCC module for real-time infrared template matching across cameras with different fields of view.",
       links: [
         { label: "Paper", href: "https://doi.org/10.1109/ACCESS.2024.3492206" },
@@ -87,8 +88,8 @@ export const siteData = {
       authors: ["Donyung Kim", "Sungho Kim"],
       venue: "Artificial Intelligence and Machine Learning for Multi-Domain Operations Applications VI, Proc. SPIE 13051, 130510T",
       year: "2024",
-      image: "assets/publications/thermal-map-paper.jpg",
-      imageAlt: "First page of the 3D LWIR thermal mapping paper",
+      image: "assets/publications/thermal-map-results.webp",
+      imageAlt: "Visible-LWIR depth estimation and 3D thermal mapping results",
       summary: "A feasibility study of deep learning-based visual SLAM for building 3D thermal maps from LWIR observations.",
       links: [
         { label: "Paper", href: "https://doi.org/10.1117/12.3013365" },
@@ -100,8 +101,8 @@ export const siteData = {
       authors: ["Donyung Kim", "Sungho Kim"],
       venue: "24th International Conference on Control, Automation and Systems (ICCAS), pp. 309–312",
       year: "2024",
-      image: "assets/publications/trajectory-paper.jpg",
-      imageAlt: "First page of the monocular indoor trajectory paper",
+      image: "assets/publications/trajectory-results.webp",
+      imageAlt: "Indoor digital twin and object trajectory visualization results",
       summary: "A compact method for extracting spatial object trajectories in indoor monitoring systems using a monocular RGB camera.",
       links: []
     },
@@ -118,14 +119,6 @@ export const siteData = {
   ],
 
   projects: [
-    {
-      title: "3D Perception, Tracking & Active Refinement",
-      eyebrow: "Current research direction",
-      image: "assets/projects/multiview-3d-mapping.webp",
-      imageAlt: "Multiple camera views reconstructed as a 3D indoor map",
-      description: "I am developing a research direction in which an explicit object model remains aligned with the physical world, detects disagreement with new observations, and actively gathers evidence to correct itself. The goal is reliable object understanding for robotic inspection and interaction.",
-      topics: ["Explicit 3D Models", "6-DoF Tracking", "Active Vision", "Robotic Perception"]
-    },
     {
       title: "Image-based 3D Monitoring & Segmentation",
       eyebrow: "RLRC · 2024–2025",
