@@ -51,10 +51,7 @@ function renderResearch() {
   document.querySelector("#research-stages").innerHTML = research.stages
     .map((stage, index) => `
       <article class="research-stage">
-        <div class="stage-topline">
-          <span class="stage-number">${escapeHtml(stage.number)}</span>
-          ${index < research.stages.length - 1 ? '<span class="stage-arrow" aria-hidden="true">→</span>' : ""}
-        </div>
+        ${index < research.stages.length - 1 ? '<span class="stage-arrow" aria-hidden="true">→</span>' : ""}
         <h3>${escapeHtml(stage.title)}</h3>
         <p>${escapeHtml(stage.description)}</p>
       </article>

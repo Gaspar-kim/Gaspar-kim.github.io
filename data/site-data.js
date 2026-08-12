@@ -1,9 +1,9 @@
 export const siteData = {
   profile: {
     name: "Donyung Kim",
-    position: "Robotics Researcher at NaviFra · Main Project: NaviDock",
+    position: "Robotics Researcher at NaviFra",
     fields: ["3D Vision", "Spatial Intelligence", "Robotic Perception"],
-    bio: "I am a robotics researcher at NaviFra, working on 3D perception and 6-DoF object tracking for robotic systems. I received my M.S. in Electronic Engineering from Yeungnam University, where I worked on multimodal computer vision, thermal imaging, 3D reconstruction, and visual tracking in the Advanced Visual Intelligence Laboratory (AVIL), advised by Prof. Sungho Kim. My current research interests lie in spatial intelligence for precise and interactive 3D object understanding.",
+    bio: "I am a robotics researcher at NaviFra, working on 3D perception and 6-DoF object tracking for robotic systems. I received my M.S. in Electronic Engineering from Yeungnam University, where I worked on multimodal computer vision in the Advanced Visual Intelligence Laboratory (AVIL), advised by Prof. Sungho Kim.",
     email: "dnkim9970@gmail.com",
     location: "Suwon, South Korea",
     portrait: "assets/profile/donyung-kim-portrait.jpg",
@@ -25,25 +25,22 @@ export const siteData = {
   ],
 
   researchIntroduction: {
-    lead: "My research focuses on building **spatial intelligence that can maintain an accurate 3D understanding of objects in the real world**. Recent 3D models have become increasingly capable of reconstructing complete and plausible objects from limited visual observations. I am particularly interested in the next step: enabling an AI system to recognize when its internal 3D model does not match the real object, actively gather the information needed to understand the discrepancy, and continuously refine its model based on new evidence.",
+    lead: "Rather than stopping at plausible 3D reconstruction, I am interested in spatial intelligence that can identify where an internal explicit 3D object model disagrees with the physical object, actively select observations that resolve the discrepancy, and progressively refine its geometry. In the long term, I aim to extend this framework to deformable objects and robotic manipulation.",
     stages: [
       {
-        number: "01",
         title: "3D Perception & Tracking",
         description: "Builds an initial explicit 3D representation of an object and keeps it aligned with the object as it moves."
       },
       {
-        number: "02",
         title: "Active Verification & Refinement",
         description: "Compares the model with real observations, identifies uncertainty, and seeks evidence that can refine the geometry."
       },
       {
-        number: "03",
         title: "Interactive Physical Understanding",
         description: "Extends explicit understanding to deformable objects and how their shape changes under action."
       }
     ],
-    goal: "My long-term goal is to build an agent whose internal explicit 3D model becomes progressively consistent with the physical object through a continuous loop of **observation, verification, interaction, and self-correction**. I ultimately hope that such precise object understanding can support reliable robotic manipulation, inspection, and interaction with complex real-world objects.",
+    goal: "My long-term goal is to build an agent whose explicit 3D model becomes progressively consistent with the physical object through continuous observation and self-correction.",
     loop: ["Observation", "Verification", "Interaction", "Self-correction"]
   },
 
