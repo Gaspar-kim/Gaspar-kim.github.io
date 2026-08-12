@@ -16,10 +16,9 @@ Layout and styling are separated into:
 
 ## Replace placeholders
 
-1. Add Google Scholar and LinkedIn URLs to `profile.socialLinks` and remove `placeholder: true`.
-2. Replace `profile.position` after the Ph.D. institution, department, and advisor are confirmed.
-3. Replace `assets/profile/og-placeholder.svg` with a 1200 × 630 social-preview image if desired.
-4. Add paper or project URLs for the ICCAS publications when available.
+1. Replace `profile.position` after the Ph.D. institution, department, and advisor are confirmed.
+2. Replace `assets/profile/og-placeholder.svg` with a 1200 × 630 social-preview image if desired.
+3. Add paper or project URLs for the ICCAS publications when available.
 
 ## Run locally
 

@@ -1,7 +1,7 @@
 export const siteData = {
   profile: {
     name: "Donyung Kim",
-    position: "[Ph.D. Student, Department, University]",
+    position: "Robotics Researcher at NaviFra · Since Sep. 2025",
     fields: ["Computer Vision", "3D Vision", "Spatial Intelligence", "Robotics"],
     email: "dnkim9970@gmail.com",
     location: "Suwon, South Korea",
@@ -10,9 +10,9 @@ export const siteData = {
     socialLinks: [
       { label: "Email", href: "mailto:dnkim9970@gmail.com" },
       { label: "CV", href: "assets/cv/donyung-kim-cv.pdf" },
-      { label: "Google Scholar", href: "", placeholder: true },
+      { label: "Google Scholar", href: "https://scholar.google.com/citations?user=c_Vk9dgAAAAJ&hl=ko" },
       { label: "GitHub", href: "https://github.com/Gaspar-kim" },
-      { label: "LinkedIn", href: "", placeholder: true }
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/donyung-kim-72859737b/" }
     ]
   },
 

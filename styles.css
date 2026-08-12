@@ -197,12 +197,13 @@ a:focus-visible,
 .portrait-wrap {
   margin: 0;
   justify-self: end;
-  width: min(100%, 292px);
+  width: min(100%, 190px);
 }
 
 .portrait-wrap img {
   width: 100%;
-  aspect-ratio: 0.84;
+  height: auto;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -726,7 +727,7 @@ h2 {
   .portrait-wrap {
     order: 2;
     justify-self: start;
-    width: min(70vw, 260px);
+    width: min(48vw, 170px);
   }
 
   .hero h1 {
