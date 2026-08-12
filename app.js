@@ -34,7 +34,9 @@ function renderProfile() {
   const { profile } = siteData;
   document.querySelector("#hero-position").textContent = profile.position;
   document.querySelector("#hero-fields").textContent = profile.fields.join(" · ");
-  document.querySelector("#hero-bio").textContent = profile.bio;
+  const advisorName = profile.advisor.name;
+  const [bioBeforeAdvisor, bioAfterAdvisor = ""] = profile.bio.split(advisorName);
+  document.querySelector("#hero-bio").innerHTML = `${escapeHtml(bioBeforeAdvisor)}<a class="bio-link" href="${escapeHtml(profile.advisor.href)}"${externalAttributes(profile.advisor.href)}>${escapeHtml(advisorName)}</a>${escapeHtml(bioAfterAdvisor)}`;
   document.querySelector("#social-links").innerHTML = profile.socialLinks
     .map((link) => renderLink(link))
     .join('<span class="link-separator" aria-hidden="true">/</span>');

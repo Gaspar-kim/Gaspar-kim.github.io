@@ -177,6 +177,16 @@ a:focus-visible,
   line-height: 1.68;
 }
 
+.bio-link {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--accent) 38%, transparent);
+  text-underline-offset: 3px;
+}
+
+.bio-link:hover {
+  color: var(--accent-dark);
+}
+
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -204,7 +214,7 @@ a:focus-visible,
 .portrait-wrap {
   margin: 0;
   justify-self: end;
-  width: min(100%, 190px);
+  width: min(100%, 220px);
 }
 
 .portrait-wrap img {
@@ -725,7 +735,7 @@ h2 {
   .portrait-wrap {
     order: 2;
     justify-self: start;
-    width: min(48vw, 170px);
+    width: min(52vw, 185px);
   }
 
   .hero h1 {
