@@ -61,6 +61,7 @@ export const siteData = {
     {
       title: "RecNet: Reinforcement Common Feature Mapping Network for Fast Template Matching in Visible-LWIR Images",
       authors: ["Donyung Kim", "Seungeon Lee", "Inho Park", "Geonjong Kim", "Sungho Kim"],
+      authorRole: "First author",
       venue: "IEEE Access, vol. 12, pp. 195890–195905",
       year: "2024",
       image: "assets/publications/recnet-architecture.webp",
@@ -74,6 +75,8 @@ export const siteData = {
     {
       title: "Perceptible Lightweight Zero-Mean Normalized Cross-Correlation for Infrared Template Matching",
       authors: ["Seungeon Lee", "Donyung Kim", "Inho Park", "Geonjong Kim", "Sungho Kim"],
+      equalContributionAuthors: ["Seungeon Lee", "Donyung Kim"],
+      authorRole: "† Equal contribution · Co-first author",
       venue: "IEEE Access, vol. 12, pp. 164777–164791",
       year: "2024",
       image: "assets/publications/plztm-figure.webp",
@@ -87,6 +90,7 @@ export const siteData = {
     {
       title: "Generation of 3D LWIR Thermal Maps Based on Deep Learning SLAM: Feasibility and Evaluation",
       authors: ["Donyung Kim", "Sungho Kim"],
+      authorRole: "First author",
       venue: "Artificial Intelligence and Machine Learning for Multi-Domain Operations Applications VI, Proc. SPIE 13051, 130510T",
       year: "2024",
       image: "assets/publications/thermal-map-results.webp",
@@ -100,6 +104,7 @@ export const siteData = {
     {
       title: "Compact Monocular Camera-based Indoor Object Trajectory Extraction System for Enhanced Monitoring",
       authors: ["Donyung Kim", "Sungho Kim"],
+      authorRole: "First author",
       venue: "24th International Conference on Control, Automation and Systems (ICCAS), pp. 309–312",
       year: "2024",
       image: "assets/publications/trajectory-results.webp",
@@ -110,6 +115,7 @@ export const siteData = {
     {
       title: "Deep Learning Based EO-LWIR Image Registration Obstacles: Survey",
       authors: ["Donyung Kim", "Sungho Kim"],
+      authorRole: "First author",
       venue: "23rd International Conference on Control, Automation and Systems (ICCAS)",
       year: "2023",
       image: "assets/publications/iccas-survey-paper.jpg",

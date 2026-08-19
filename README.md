@@ -1,35 +1,50 @@
 # Donyung Kim — Academic Research Homepage
 
-A dependency-free static site intended for GitHub Pages.
+A dependency-free static site for GitHub Pages.
 
 ## Update content
 
-All profile, news, publication, project, experience, education, award, patent, and social-link content lives in:
+Most content lives in `data/site-data.js`:
 
-`data/site-data.js`
+- `profile` — position, biography, portrait, and profile links
+- `researchIntroduction` — research statement, stages, goal, and loop
+- `news`, `publications`, `projects`
+- `experience`, `education`, `awards`, `patents`
 
 Layout and styling are separated into:
 
 - `index.html` — semantic page structure and metadata
-- `styles.css` — responsive visual system
-- `app.js` — rendering structured data into the page
+- `styles.css` — responsive layout and visual styles
+- `app.js` — rendering the structured data into the page
 
-## Replace placeholders
+For publications, use these optional fields when needed:
 
-1. Replace `profile.position` after the Ph.D. institution, department, and advisor are confirmed.
-2. Replace `assets/profile/og-placeholder.svg` with a 1200 × 630 social-preview image if desired.
-3. Add paper or project URLs for the ICCAS publications when available.
+```js
+authorRole: "First author",
+equalContributionAuthors: ["Author A", "Donyung Kim"]
+```
 
-## Run locally
+Images are stored under `assets/profile`, `assets/publications`, and
+`assets/projects`. Keep the same filename to replace an existing image without
+editing the data file.
 
-From this directory:
+## Preview locally
+
+Open PowerShell in this repository and run:
 
 ```powershell
 python -m http.server 8000
 ```
 
-Then open `http://localhost:8000`.
+Then open `http://localhost:8000` in a browser. Stop the server with `Ctrl+C`.
 
-## Publish with GitHub Pages
+## Save and publish changes
 
-Create a public repository named `Gaspar-kim.github.io`, commit these files to its default branch, and push. GitHub Pages user sites are served from that repository automatically; confirm the Pages settings if deployment does not start.
+```powershell
+git add .
+git commit -m "Update homepage content"
+git push origin main
+```
+
+GitHub Pages normally updates within a few minutes at
+`https://gaspar-kim.github.io/`.

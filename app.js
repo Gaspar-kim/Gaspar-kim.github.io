@@ -76,11 +76,16 @@ function renderNews() {
     `).join("");
 }
 
-function renderAuthors(authors) {
-  return authors.map((author) => author === selfName
-    ? `<strong>${escapeHtml(author)}</strong>`
-    : escapeHtml(author)
-  ).join(", ");
+function renderAuthors(authors, equalContributionAuthors = []) {
+  return authors.map((author) => {
+    const name = author === selfName
+      ? `<strong>${escapeHtml(author)}</strong>`
+      : escapeHtml(author);
+    const contributionMark = equalContributionAuthors.includes(author)
+      ? '<sup class="contribution-mark" aria-label="equal contribution">†</sup>'
+      : "";
+    return `${name}${contributionMark}`;
+  }).join(", ");
 }
 
 function renderPublications() {
@@ -92,7 +97,8 @@ function renderPublications() {
         </a>
         <div class="publication-copy">
           <h3>${escapeHtml(publication.title)}</h3>
-          <p class="authors">${renderAuthors(publication.authors)}</p>
+          <p class="authors">${renderAuthors(publication.authors, publication.equalContributionAuthors)}</p>
+          ${publication.authorRole ? `<p class="author-role">${escapeHtml(publication.authorRole)}</p>` : ""}
           <p class="venue"><cite>${escapeHtml(publication.venue)}</cite>, ${escapeHtml(publication.year)}</p>
           ${publication.links.length ? `<div class="publication-links">${publication.links.map((link) => renderLink(link, "paper-link")).join("")}</div>` : ""}
           <p class="publication-summary">${escapeHtml(publication.summary)}</p>
