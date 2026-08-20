@@ -15,6 +15,7 @@ export const siteData = {
     socialLinks: [
       { label: "Email", href: "mailto:dnkim9970@gmail.com" },
       { label: "CV", href: "assets/cv/donyung-kim-cv.pdf" },
+      { label: "Proposal", href: "assets/documents/donyung-kim-research-proposal.pdf" },
       { label: "Google Scholar", href: "https://scholar.google.com/citations?user=c_Vk9dgAAAAJ&hl=ko" },
       { label: "GitHub", href: "https://github.com/Gaspar-kim" },
       { label: "LinkedIn", href: "https://www.linkedin.com/in/donyung-kim-72859737b/" }

@@ -24,8 +24,9 @@ authorRole: "First author",
 equalContributionAuthors: ["Author A", "Donyung Kim"]
 ```
 
-Images are stored under `assets/profile` and `assets/publications`. Keep the
-same filename to replace an existing image without editing the data file.
+Images are stored under `assets/profile` and `assets/publications`; downloadable
+documents are stored under `assets/cv` and `assets/documents`. Keep the same
+filename to replace an existing asset without editing the data file.
 
 ## Preview locally
 
