@@ -3,7 +3,7 @@ export const siteData = {
     name: "Donyung Kim",
     position: "Robotics Researcher at NaviFra",
     fields: ["3D Vision", "Spatial Intelligence", "Robotic Perception"],
-    bio: "I am a robotics researcher at NaviFra, working on 3D perception and 6-DoF object tracking for robotic systems. I received my M.S. in Electronic Engineering from Yeungnam University, where I worked on multimodal computer vision in the Advanced Visual Intelligence Laboratory (AVIL), advised by Prof. Sungho Kim. My current research interests lie in spatial intelligence for precise and interactive 3D object understanding.",
+    bio: "I am a robotics researcher at NaviFra, where I work on 3D perception and 6-DoF object tracking for robotic systems. I received my M.S. in Electronic Engineering from Yeungnam University, where I conducted research on multimodal computer vision in the Advanced Visual Intelligence Laboratory (AVIL) under the supervision of Prof. Sungho Kim. My current research focuses on spatial intelligence systems that can actively verify and correct their own 3D models of physical objects.",
     advisor: {
       name: "Prof. Sungho Kim",
       href: "https://scholar.google.com/citations?user=3TptC38AAAAJ&hl=en"
@@ -29,23 +29,23 @@ export const siteData = {
   ],
 
   researchIntroduction: {
-    lead: "My research focuses on spatial intelligence that can maintain an explicit 3D model of a physical object, identify where that model disagrees with real observations, and actively gather the evidence needed to refine its geometry. I am particularly interested in moving beyond plausible 3D reconstruction toward explicit representations that can be continuously verified and corrected against the physical world.",
+    lead: "I study spatial intelligence systems that maintain an explicit 3D model of a physical object and continually test it against real-world observations. When the model and observations disagree, the system should determine whether the mismatch comes from pose or geometry, seek out the most informative new evidence, and update the model accordingly. My goal is to move beyond plausible 3D reconstruction toward models that can actively verify and correct themselves.",
     stages: [
       {
         title: "3D Perception & Tracking",
-        description: "Builds an initial explicit 3D representation of an object and keeps it aligned with the object as it moves."
+        description: "Builds an explicit 3D model of an object and keeps it aligned as the object moves."
       },
       {
         title: "Active Verification & Refinement",
-        description: "Compares the model with real observations, identifies uncertainty, and seeks evidence that can refine the geometry."
+        description: "Determines whether a mismatch comes from pose or geometry, then selects observations that best distinguish between the two and updates the model."
       },
       {
         title: "Interactive Physical Understanding",
-        description: "Extends explicit understanding to deformable objects and how their shape changes under action."
+        description: "Extends this framework to deformable and changing objects, where understanding shape also requires understanding how it changes under action."
       }
     ],
-    goal: "My long-term goal is to extend this framework from rigid objects to deformable objects and robotic manipulation.",
-    loop: ["Observation", "Verification", "Interaction", "Self-correction"]
+    goal: "In the long term, I aim to extend this framework beyond rigid-object geometry to deformable and changing objects, and ultimately to robotic manipulation, where physical interaction itself can provide evidence.",
+    loop: ["Observe", "Compare", "Diagnose", "Gather Evidence", "Refine"]
   },
 
   news: [
