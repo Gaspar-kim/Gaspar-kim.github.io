@@ -107,25 +107,6 @@ function renderPublications() {
     `).join("");
 }
 
-function renderProjects() {
-  document.querySelector("#project-list").innerHTML = siteData.projects
-    .map((project) => `
-      <article class="project">
-        <figure class="project-media">
-          <img src="${escapeHtml(project.image)}" alt="${escapeHtml(project.imageAlt)}" width="1000" height="620" loading="lazy" decoding="async">
-        </figure>
-        <div class="project-copy">
-          <p class="project-eyebrow">${escapeHtml(project.eyebrow)}</p>
-          <h3>${escapeHtml(project.title)}</h3>
-          <p>${escapeHtml(project.description)}</p>
-          <ul class="topic-list" aria-label="Research topics">
-            ${project.topics.map((topic) => `<li>${escapeHtml(topic)}</li>`).join("")}
-          </ul>
-        </div>
-      </article>
-    `).join("");
-}
-
 function renderRecords(target, records, type) {
   document.querySelector(target).innerHTML = records.map((record) => {
     const title = type === "education" ? record.institution : record.organization;
@@ -184,7 +165,6 @@ function initialize() {
   renderResearch();
   renderNews();
   renderPublications();
-  renderProjects();
   renderRecords("#experience-list", siteData.experience, "experience");
   renderRecords("#education-list", siteData.education, "education");
   renderAwards();

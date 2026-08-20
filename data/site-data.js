@@ -125,25 +125,6 @@ export const siteData = {
     }
   ],
 
-  projects: [
-    {
-      title: "Image-based 3D Monitoring & Segmentation",
-      eyebrow: "RLRC · 2024–2025",
-      image: "assets/projects/segmentation-integration.webp",
-      imageAlt: "Integration of segmentation masks across multiple indoor views",
-      description: "A real-time monitoring pipeline combining image-based 3D mapping, pose estimation, multi-camera person re-identification, and the integration of reconstructed maps with 2D segmentation masks.",
-      topics: ["3D Reconstruction", "Multi-view Re-ID", "Pose Estimation", "3D Segmentation"]
-    },
-    {
-      title: "Visible–LWIR Registration",
-      eyebrow: "Hanwha Systems project · 2023–2025",
-      image: "assets/projects/visible-lwir-matching.webp",
-      imageAlt: "Visible-LWIR matching comparison and correlation heatmaps",
-      description: "Research on real-time registration between wide-field EO imagery and narrow-field LWIR imagery using pooling-free feature mapping and correlation-based matching.",
-      topics: ["Multimodal Vision", "Thermal Imaging", "Template Matching"]
-    }
-  ],
-
   experience: [
     {
       organization: "NaviFra",

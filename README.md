@@ -8,7 +8,7 @@ Most content lives in `data/site-data.js`:
 
 - `profile` — position, biography, portrait, and profile links
 - `researchIntroduction` — research statement, stages, goal, and loop
-- `news`, `publications`, `projects`
+- `news`, `publications`
 - `experience`, `education`, `awards`, `patents`
 
 Layout and styling are separated into:
@@ -24,9 +24,8 @@ authorRole: "First author",
 equalContributionAuthors: ["Author A", "Donyung Kim"]
 ```
 
-Images are stored under `assets/profile`, `assets/publications`, and
-`assets/projects`. Keep the same filename to replace an existing image without
-editing the data file.
+Images are stored under `assets/profile` and `assets/publications`. Keep the
+same filename to replace an existing image without editing the data file.
 
 ## Preview locally
 
